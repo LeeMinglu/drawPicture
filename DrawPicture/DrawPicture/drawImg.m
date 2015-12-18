@@ -16,10 +16,28 @@
 - (void)drawRect:(CGRect)rect {
     
     //1.画线
-    [self drawline1];
+//    [self drawline1];
+//    
+//    //2.UIBezierPath画线
+//    [self bezierDraw];
     
-    //2.UIBezierPath画线
-    [self bezierDraw];
+    //3.画矩形
+    [self drawCircle];
+    
+}
+
+
+//画矩形
+- (void)drawCircle {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 100, 20)];
+    [path closePath];
+    
+    
+    [[UIColor greenColor] setStroke];
+    [path stroke];
+    
+    [[UIColor redColor] setFill];
+    [path fill];
     
 }
 
