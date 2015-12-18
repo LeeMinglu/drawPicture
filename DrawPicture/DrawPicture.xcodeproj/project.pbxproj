@@ -13,6 +13,7 @@
 		1A017BC91C23D3F0005D53FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A017BC71C23D3F0005D53FC /* Main.storyboard */; };
 		1A017BCB1C23D3F0005D53FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A017BCA1C23D3F0005D53FC /* Assets.xcassets */; };
 		1A017BCE1C23D3F0005D53FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A017BCC1C23D3F0005D53FC /* LaunchScreen.storyboard */; };
+		1A017BD71C23D582005D53FC /* drawImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A017BD61C23D582005D53FC /* drawImg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1A017BCA1C23D3F0005D53FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A017BCD1C23D3F0005D53FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A017BCF1C23D3F0005D53FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A017BD51C23D582005D53FC /* drawImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawImg.h; sourceTree = "<group>"; };
+		1A017BD61C23D582005D53FC /* drawImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawImg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				1A017BC21C23D3F0005D53FC /* AppDelegate.m */,
 				1A017BC41C23D3F0005D53FC /* ViewController.h */,
 				1A017BC51C23D3F0005D53FC /* ViewController.m */,
+				1A017BD51C23D582005D53FC /* drawImg.h */,
+				1A017BD61C23D582005D53FC /* drawImg.m */,
 				1A017BC71C23D3F0005D53FC /* Main.storyboard */,
 				1A017BCA1C23D3F0005D53FC /* Assets.xcassets */,
 				1A017BCC1C23D3F0005D53FC /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				1A017BC61C23D3F0005D53FC /* ViewController.m in Sources */,
 				1A017BC31C23D3F0005D53FC /* AppDelegate.m in Sources */,
 				1A017BC01C23D3F0005D53FC /* main.m in Sources */,
+				1A017BD71C23D582005D53FC /* drawImg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
