@@ -18,6 +18,39 @@
     //1.画线
     [self drawline1];
     
+    //2.UIBezierPath画线
+    [self bezierDraw];
+    
+}
+
+///bezier画线
+- (void)bezierDraw {
+    
+    //1.获取上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    //2.拼接路径
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    
+    //2.1设置起点
+    [path moveToPoint:CGPointMake(50, 60)];
+    
+    //2.2设置终点
+    [path addLineToPoint:CGPointMake(100, 100)];
+    [path addLineToPoint:CGPointMake(200, 100)];
+
+    
+    //3.将路径添加到上下文
+    CGContextAddPath(ctx, path.CGPath);
+    
+    //设置绘图状态
+    CGContextSetLineCap(ctx, kCGLineCapRound);
+    CGContextSetLineWidth(ctx, 20);
+    [[UIColor redColor] set];
+    
+    //4.渲染到view的layer
+    CGContextStrokePath(ctx);
+    
 }
 
 
